@@ -1,6 +1,7 @@
 import { Mail, Heart } from 'lucide-react';
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { siteConfig, socialLinks } from '../data/teamData';
+import PlasmaLogo from '../components/PlasmaLogo';
 
 const socials = [
   { icon: FaGithub, href: socialLinks.github, label: 'GitHub' },
@@ -17,10 +18,8 @@ export default function Footer() {
           {/* Branding */}
           <div>
             <div className="flex items-center gap-2 mb-3">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-electric to-purple flex items-center justify-center font-display font-bold text-xs text-white">
-                {siteConfig.teamInitials}
-              </div>
-              <span className="font-display font-semibold text-white/90 text-sm">{siteConfig.teamName}</span>
+              <PlasmaLogo size="sm" showText={true} interactive={true} />
+              <span className="font-display font-semibold text-white/90 text-sm ml-1">{siteConfig.teamName}</span>
             </div>
             <p className="text-xs text-white/30 leading-relaxed">
               Built with creativity, technology & teamwork.

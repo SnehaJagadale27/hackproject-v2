@@ -3,9 +3,9 @@
 // ═══════════════════════════════════════════════════════════
 
 export const siteConfig = {
-  teamName: "Codex",
-  teamInitials: "CX",
-  hackathonName: "",
+  teamName: "NexCore",
+  teamInitials: "NC",
+  hackathonName: "Hackathon 2026",
   tagline: "Four minds. Different strengths. One mission — turning ideas into meaningful solutions.",
   badge: "Tech × Creativity × Impact",
 };
@@ -15,56 +15,56 @@ export const siteConfig = {
 // ——————————————————————————
 export const members = [
   {
-  id: 1,
-  name: "Abhay Kakaso Chougule",
-  role: "AI & Data Science Engineer",
+    id: 1,
+    name: "Abhay Chougule",
+    role: "AI & Data Science Engineer",
 
-  bio: "Motivated Artificial Intelligence and Data Science engineering student with knowledge of programming, machine learning, data analysis, and web development. Passionate about applying technical skills to real-world projects.",
+    bio: "Motivated Artificial Intelligence and Data Science engineering student with knowledge of programming, machine learning, data analysis, and web development. Passionate about applying technical skills to real-world projects.",
 
-  photo: "/assets/team/Abhay.jpeg",
-  photoPosition: "center 20%",
+    photo: "/assets/team/Abhay.jpeg",
+    photoPosition: "center 20%",
 
-  technicalSkills: [
-    "C",
-    "C++",
-    "Java",
-    "Python",
-    "JavaScript",
-    "HTML5",
-    "CSS3",
-    "Bootstrap",
-    "MySQL",
-    "Jupyter Notebook",
-    "LangChain",
-    "APIs",
-    "Node.js",
-    "Microsoft Excel",
-    "Power BI"
-  ],
+    technicalSkills: [
+      "C",
+      "C++",
+      "Java",
+      "Python",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "Bootstrap",
+      "MySQL",
+      "Jupyter Notebook",
+      "LangChain",
+      "APIs",
+      "Node.js",
+      "Microsoft Excel",
+      "Power BI"
+    ],
 
-  softSkills: [
-    "Problem Solving",
-    "Communication",
-    "Teamwork",
-    "Leadership",
-    "Planning",
-    "Adaptability",
-    "Continuous Learning"
-  ],
+    softSkills: [
+      "Problem Solving",
+      "Communication",
+      "Teamwork",
+      "Leadership",
+      "Planning",
+      "Adaptability",
+      "Continuous Learning"
+    ],
 
-  personality: [
-    "Problem Solver",
-    "Curious Learner",
-    "Analytical Thinker",
-    "Team Player",
-    "Innovative",
-    "Goal Oriented"
-  ],
+    personality: [
+      "Problem Solver",
+      "Curious Learner",
+      "Analytical Thinker",
+      "Team Player",
+      "Innovative",
+      "Goal Oriented"
+    ],
 
-  github: "https://github.com/Abhaychougule",
-  linkedin: "https://linkedin.com/in/abhay-chougule-5a15a6384",
-  portfolio: "https://abhaychougule04.github.io/Portfolio/"
-},
+    github: "https://github.com/Abhaychougule",
+    linkedin: "https://linkedin.com/in/abhay-chougule-5a15a6384",
+    portfolio: "https://abhaychougule04.github.io/Portfolio/"
+  },
   {
     id: 2,
     name: "Avinash Kamble",
@@ -73,28 +73,28 @@ export const members = [
     photo: "/assets/team/Avinash.jpeg",
     photoPosition: "center center",
     technicalSkills: ["Python",
-        "C",
-        "C++",
-        "JavaScript",
-        "React.js",
-        "AI/ML",
-        "Data Analytics",
-        "MySQL",
-        "Firebase",
-        "AWS",
-        "Android Development",
-        "Git & GitHub"],
+      "C",
+      "C++",
+      "JavaScript",
+      "React.js",
+      "AI/ML",
+      "Data Analytics",
+      "MySQL",
+      "Firebase",
+      "AWS",
+      "Android Development",
+      "Git & GitHub"],
     softSkills: ["Problem Solving",
-        "Quick Learning",
-        "Teamwork",
-        "Communication",
-        "Creativity",
-        "Adaptability"],
+      "Quick Learning",
+      "Teamwork",
+      "Communication",
+      "Creativity",
+      "Adaptability"],
     personality: ["Technology Enthusiast",
-        "Problem Solver",
-        "Quick Learner",
-        "Creative Thinker",
-        "Innovation Focused"],
+      "Problem Solver",
+      "Quick Learner",
+      "Creative Thinker",
+      "Innovation Focused"],
     github: "https://github.com/ak-devzone/",
     linkedin: "https://www.linkedin.com/in/avinashkamble-ak/",
     portfolio: "",
@@ -111,66 +111,66 @@ export const members = [
     photoPosition: "center 25%",
 
     technicalSkills: [
-        "Artificial Intelligence",
-        "Machine Learning",
-        "Data Analysis",
-        "Python",
-        "Research",
-        "Problem Analysis",
-        "Data Science",
-        "Generative AI",
-        "Full-Stack Development",
-        "Cloud Computing",
-        "Project Development",
-        "Technical Documentation"
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Data Analysis",
+      "Python",
+      "Research",
+      "Problem Analysis",
+      "Data Science",
+      "Generative AI",
+      "Full-Stack Development",
+      "Cloud Computing",
+      "Project Development",
+      "Technical Documentation"
     ],
 
     softSkills: [
-        "Critical Thinking",
-        "Problem Solving",
-        "Research",
-        "Communication",
-        "Presentation",
-        "Teamwork",
-        "Leadership",
-        "Creativity",
-        "Time Management",
-        "Adaptability"
+      "Critical Thinking",
+      "Problem Solving",
+      "Research",
+      "Communication",
+      "Presentation",
+      "Teamwork",
+      "Leadership",
+      "Creativity",
+      "Time Management",
+      "Adaptability"
     ],
 
     personality: [
-        "Innovative",
-        "Analytical",
-        "Curious",
-        "Strategic Thinker",
-        "Problem Solver",
-        "Technology Enthusiast",
-        "Creative",
-        "Growth Mindset"
+      "Innovative",
+      "Analytical",
+      "Curious",
+      "Strategic Thinker",
+      "Problem Solver",
+      "Technology Enthusiast",
+      "Creative",
+      "Growth Mindset"
     ],
 
     achievements: [
-        "Best Outgoing Student Award 2025–26",
-        "E-Cell IIT Bombay Campus Ambassador",
-        "Technical & Entrepreneurship Activities",
-        "AI/ML Internship Experience",
-        "Multiple Technology Projects"
+      "Best Outgoing Student Award 2025–26",
+      "E-Cell IIT Bombay Campus Ambassador",
+      "Technical & Entrepreneurship Activities",
+      "AI/ML Internship Experience",
+      "Multiple Technology Projects"
     ],
 
     interests: [
-        "AI & Machine Learning",
-        "Data Science",
-        "Technology Innovation",
-        "Entrepreneurship",
-        "Research & Development",
-        "Startup Ideas",
-        "Emerging Technologies"
+      "AI & Machine Learning",
+      "Data Science",
+      "Technology Innovation",
+      "Entrepreneurship",
+      "Research & Development",
+      "Startup Ideas",
+      "Emerging Technologies"
     ],
 
     github: "https://github.com/SnehaJagadale27",
-    linkedin: "https://www.linkedin.com/in/sneha-jagadale-763242331",
-   
-},
+    linkedin: "https://www.linkedin.com/in/sneha-jagadale/",
+
+  },
   {
     id: 4,
     name: "Sandhya Hake",
@@ -183,76 +183,222 @@ export const members = [
     photoPosition: "center center",
 
     technicalSkills: [
-        "Python",
-        "C++",
-        "HTML",
-        "Java",
-        "Artificial Intelligence",
-        "Machine Learning",
-        "Software Development",
-        "Web Development"
+      "Python",
+      "C++",
+      "HTML",
+      "Java",
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Software Development",
+      "Web Development"
     ],
 
     softSkills: [
-        "Communication",
-        "Teamwork",
-        "Problem Solving",
-        "Quick Learning",
-        "Adaptability",
-        "Time Management"
+      "Communication",
+      "Teamwork",
+      "Problem Solving",
+      "Quick Learning",
+      "Adaptability",
+      "Time Management"
     ],
 
     personality: [
-        "Innovative",
-        "Curious",
-        "Adaptable",
-        "Technology Enthusiast",
-        "Creative",
-        "Team Player"
+      "Innovative",
+      "Curious",
+      "Adaptable",
+      "Technology Enthusiast",
+      "Creative",
+      "Team Player"
     ],
 
     interests: [
-        "Artificial Intelligence",
-        "Machine Learning",
-        "Software Development",
-        "Web Development",
-        "Emerging Technologies",
-        "Innovative Projects"
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Software Development",
+      "Web Development",
+      "Emerging Technologies",
+      "Innovative Projects"
     ],
 
     experience: [
-        "AI Internship at RV Techniques, Pune",
-        "Hackathons & Technical Activities",
-        "Academic & Technology Projects"
+      "AI Internship at RV Techniques, Pune",
+      "Hackathons & Technical Activities",
+      "Academic & Technology Projects"
     ],
 
     github: "https://github.com/sandhya337",
     linkedin: "https://www.linkedin.com/in/sandhya-hake-7887aa357",
     portfolio: ""
-},
+  },
 ];
 
 // ——————————————————————————
-//  FEATURED PROJECT
+//  FEATURED & MULTI-PROJECT CATALOG
 // ——————————————————————————
 export const project = {
-  name: "Smart Society Complaint Management System",
+  id: "digital-lib",
+  category: "Full-Stack",
+  name: "Fullstack Digital Library System",
+  tagline: "Next-Gen Cloud Library & Resource Management Platform",
   image: "/assets/project/project-main.jpg",
-  description: "A digital platform revolutionizing how communities handle complaints and feedback.",
-  problem: "Traditional complaint systems are slow, paper-based, and nearly impossible to track — leading to frustration and unresolved issues.",
-  solution: "A digital platform that allows users to submit complaints, upload images, track status in real-time, and receive instant updates.",
-  technologies: ["Java", "XML", "Firebase", "Android"],
-  impact: "Faster complaint resolution, real-time tracking, improved community communication, and data-driven insights for management.",
-  role: "Full-stack development, UI design, database architecture, and user testing.",
+  description: "A modern web-based library management platform for browsing, searching, and managing books digitally — built for students and librarians alike.",
+  problem: "Traditional libraries rely on manual book tracking, physical catalogues, and slow checkout processes — causing inefficiency and poor user experience for both students and librarians.",
+  solution: "A full-stack digital library platform with real-time book search, user authentication, borrow/return management, automated fine calculation, and an admin dashboard — all accessible from any device.",
+  technologies: ["React.js", "Firebase Firestore", "Node.js", "JavaScript", "HTML5", "TailwindCSS", "Cloud Functions"],
+  impact: "95% faster book discovery, 100% paperless record keeping, real-time availability tracking, and a seamless modern experience for students and library administrators.",
+  role: "Full-stack development, UI/UX design, Firebase Firestore integration, authentication, and cloud deployment.",
   github: "https://github.com/ak-devzone/Fullstack-Digital-Lib-System/",
   demo: "https://library-systemm.web.app/",
+  metrics: [
+    { label: "Active Records", value: "5,000+" },
+    { label: "Search Latency", value: "<120ms" },
+    { label: "Uptime", value: "99.9%" },
+  ],
+  features: [
+    "Instant Search with fuzzy keyword filtering",
+    "Role-based Access (Student, Librarian, Admin)",
+    "Live QR Code Scanner for quick issue/return",
+    "Automated Return Reminders & Analytics",
+    "Cloud Firestore real-time inventory synchronization",
+  ],
   stats: [
     { label: "Featured Project", value: "01" },
     { label: "Team Members", value: "04" },
-    { label: "Features", value: "12+" },
+    { label: "Core Modules", value: "15+" },
     { label: "Hours of Dev", value: "200+" },
   ],
 };
+
+export const allProjects = [
+  {
+    id: "digital-lib",
+    category: "Full-Stack",
+    title: "Fullstack Digital Library System",
+    subtitle: "Cloud-Native Resource & Asset Hub",
+    description: "Enterprise-grade digital library web application with real-time Firestore database, role-based auth, instant search, and automated checkout pipelines.",
+    technologies: ["React.js", "Firebase", "Node.js", "TailwindCSS"],
+    badge: "Production Ready",
+    color: "from-blue-500/20 to-cyan-500/20",
+    borderGlow: "hover:border-cyan-400/50",
+    gradient: "from-blue-500 to-cyan-400",
+    github: "https://github.com/ak-devzone/Fullstack-Digital-Lib-System/",
+    demo: "https://library-systemm.web.app/",
+    stats: "5,000+ Books Managed • Real-time DB",
+    highlights: ["Live QR Book Tracking", "Instant Search Filter", "Fine Engine"],
+  },
+  {
+    id: "ai-diagnosis",
+    category: "AI & ML",
+    title: "MedVision: Multimodal AI Disease Classifier",
+    subtitle: "Deep Learning Diagnostic Intelligence",
+    description: "Deep Convolutional Neural Network (CNN) & Transformer model detecting pulmonary abnormalities and pneumonia in chest radiographs with 96.4% validation accuracy.",
+    technologies: ["Python", "PyTorch", "OpenCV", "FastAPI", "React"],
+    badge: "AI Research",
+    color: "from-purple-500/20 to-pink-500/20",
+    borderGlow: "hover:border-purple-400/50",
+    gradient: "from-purple-500 to-pink-500",
+    github: "https://github.com/Abhaychougule",
+    demo: "https://github.com/Abhaychougule",
+    stats: "96.4% Accuracy • Grad-CAM Heatmaps",
+    highlights: ["Grad-CAM Explainability", "Ensemble ResNet-50", "Sub-second Inference"],
+  },
+  {
+    id: "resume-intel",
+    category: "AI & ML",
+    title: "CogniHire: LLM Resume & Career Matcher",
+    subtitle: "Generative AI Semantic Matching Engine",
+    description: "Autonomous recruitment copilot utilizing LangChain, vector embeddings, and OpenAI APIs to score job-to-resume compatibility and generate personalized interview questions.",
+    technologies: ["LangChain", "Python", "ChromaDB", "Streamlit", "OpenAI"],
+    badge: "GenAI Powered",
+    color: "from-cyan-500/20 to-emerald-500/20",
+    borderGlow: "hover:border-emerald-400/50",
+    gradient: "from-cyan-400 to-emerald-400",
+    github: "https://github.com/SnehaJagadale27",
+    demo: "https://github.com/SnehaJagadale27",
+    stats: "Semantic Vectors • Top 1% Match Engine",
+    highlights: ["Vector RAG Pipeline", "Skill Gap Analyzer", "Automated Q&A Generator"],
+  },
+  {
+    id: "nexcode-ide",
+    category: "Full-Stack",
+    title: "NexCode: Cloud Collaborative IDE",
+    subtitle: "Real-time Multi-Cursor Browser Editor",
+    description: "Web-based collaborative code editor with in-browser WebContainer code execution, WebRTC live voice room, and synchronized Monaco editor instances.",
+    technologies: ["React.js", "WebSockets", "Monaco Editor", "Docker", "Node.js"],
+    badge: "DevOps / Web",
+    color: "from-indigo-500/20 to-blue-500/20",
+    borderGlow: "hover:border-indigo-400/50",
+    gradient: "from-indigo-500 to-blue-500",
+    github: "https://github.com/ak-devzone/",
+    demo: "https://github.com/ak-devzone/",
+    stats: "<40ms Latency • CRDT Sync Engine",
+    highlights: ["Real-time Cursor Presence", "Browser Terminal", "Instant Container Run"],
+  },
+  {
+    id: "iot-telemetry",
+    category: "IoT & Cloud",
+    title: "AeroSense: Campus Telemetry & Air Sentinel",
+    subtitle: "Real-time Micro-Climate Sensor Fleet",
+    description: "Distributed IoT node network measuring AQI, CO2, temperature, and acoustic pollution across university campus with predictive anomaly forecasting.",
+    technologies: ["C++ / ESP32", "Python", "MQTT", "AWS IoT Core", "Chart.js"],
+    badge: "Hardware & Cloud",
+    color: "from-amber-500/20 to-orange-500/20",
+    borderGlow: "hover:border-amber-400/50",
+    gradient: "from-amber-400 to-orange-500",
+    github: "https://github.com/sandhya337",
+    demo: "https://github.com/sandhya337",
+    stats: "24/7 Sensor Stream • Auto Alerts",
+    highlights: ["MQTT Low-Power Protocol", "Predictive Trend ML", "Live Heatmap UI"],
+  },
+  {
+    id: "algo-sentiment",
+    category: "AI & ML",
+    title: "FinPulse: Social Sentiment Market Predictor",
+    subtitle: "NLP-driven Financial Sentiment Engine",
+    description: "FinBERT-powered streaming pipeline analyzing financial news feeds, Reddit feeds, and earnings call transcripts to quantify market sentiment and backtest strategies.",
+    technologies: ["Python", "HuggingFace", "Pandas", "Scikit-Learn", "FastAPI"],
+    badge: "FinTech & NLP",
+    color: "from-rose-500/20 to-purple-500/20",
+    borderGlow: "hover:border-rose-400/50",
+    gradient: "from-rose-500 to-purple-500",
+    github: "https://github.com/Abhaychougule",
+    demo: "https://github.com/Abhaychougule",
+    stats: "100k+ Articles Scanned • Real-time Alpha",
+    highlights: ["FinBERT Sentiment Scoring", "Backtested Trading Strategies", "Live Alert Webhook"],
+  },
+  {
+    id: "neuro-shield",
+    category: "AI & ML",
+    title: "NeuroShield: Deep Packet Threat & Intrusion Sentinel",
+    subtitle: "Real-time AI Zero-Day Attack Neutralizer",
+    description: "Autonomous real-time network packet inspection and anomaly detection using deep autoencoders and Transformer embeddings to detect and mitigate zero-day cyber exploits.",
+    technologies: ["Python", "PyTorch", "Scapy", "Kafka", "React.js", "FastAPI"],
+    badge: "Cyber AI / Security",
+    color: "from-red-500/20 to-violet-500/20",
+    borderGlow: "hover:border-red-400/50",
+    gradient: "from-red-500 to-violet-500",
+    github: "https://github.com/ak-devzone/",
+    demo: "https://github.com/ak-devzone/",
+    stats: "99.1% Anomaly Detection • <10ms Packet Inspection",
+    highlights: ["Zero-Day Anomaly Detection", "Live Packet Flow Visualizer", "Instant Quarantine Trigger"],
+  },
+  {
+    id: "agro-vision",
+    category: "IoT & Cloud",
+    title: "AgroVision: Autonomous Crop Disease & Drone AI",
+    subtitle: "Edge-AI Precision Agriculture Platform",
+    description: "Edge-AI multispectral drone vision pipeline for early crop blight detection, NDVI soil moisture mapping, and yield optimization with localized multilingual voice alerts for farmers.",
+    technologies: ["Python", "OpenCV", "YOLOv8", "TensorFlow Lite", "ESP32", "React"],
+    badge: "AgriTech & Edge AI",
+    color: "from-emerald-500/20 to-lime-500/20",
+    borderGlow: "hover:border-emerald-400/50",
+    gradient: "from-emerald-400 to-lime-400",
+    github: "https://github.com/SnehaJagadale27",
+    demo: "https://github.com/SnehaJagadale27",
+    stats: "30+ Plant Pathologies • 97.8% Edge Precision",
+    highlights: ["YOLOv8 Real-time Detection", "NDVI Vegetation Index", "Multilingual Voice Advisory"],
+  }
+];
 
 // ——————————————————————————
 //  ACHIEVEMENTS
@@ -367,10 +513,10 @@ export const workflowSteps = [
 //  TEAM STRENGTH
 // ——————————————————————————
 export const teamStrengths = [
-  { member: "Member 01", strength: "Development", color: "#3b82f6" },
-  { member: "Member 02", strength: "Design", color: "#8b5cf6" },
-  { member: "Member 03", strength: "Research", color: "#06b6d4" },
-  { member: "Member 04", strength: "Strategy & Communication", color: "#10b981" },
+  { member: "Abhay", strength: "AI & Full-Stack Dev", color: "#3b82f6" },
+  { member: "Avinash", strength: "Software & Cloud", color: "#8b5cf6" },
+  { member: "Sneha", strength: "AI/ML & Research", color: "#06b6d4" },
+  { member: "Sandhya", strength: "ML & Innovation", color: "#10b981" },
 ];
 
 // ——————————————————————————
@@ -383,11 +529,25 @@ export const mindsetPoints = [
 ];
 
 // ——————————————————————————
-//  SOCIAL LINKS
+//  SOCIAL & CONTACT CONFIG
 // ——————————————————————————
 export const socialLinks = {
   github: "https://github.com",
   linkedin: "https://linkedin.com",
   instagram: "https://instagram.com",
-  email: "mailto:team@example.com",
+  email: "mailto:Nexcoreinfo@gmail.com",
+};
+
+export const contactConfig = {
+  // Paste your Google Apps Script Web App URL here to receive submissions in Google Sheets
+  googleSheetScriptUrl: "https://script.google.com/macros/s/AKfycbzlnv7WR2dwImjrug0GGdQCqyrCcONqLU2D4grzC1XVD8hxBiOMGLgmaLZ1JRINLg3E/exec",
+  services: [
+    "Full-Stack Web Application",
+    "AI / Deep Learning Solution",
+    "Generative AI & LLM Copilot",
+    "IoT & Embedded Cloud Telemetry",
+    "Hackathon / Startup Collaboration",
+    "Custom Software Engineering",
+  ],
+  timelines: ["Urgent (< 1 Week)", "1 - 2 Weeks", "1 Month+", "Exploring Ideas"],
 };

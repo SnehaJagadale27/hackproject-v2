@@ -2,6 +2,7 @@ import { useRef, useEffect, useState } from 'react';
 import { motion, useMotionValue, useSpring, useTransform, AnimatePresence } from 'framer-motion';
 import { ChevronDown, Code, Sparkles, Cpu, Zap, Rocket, Users, ArrowRight } from 'lucide-react';
 import { siteConfig, members } from '../data/teamData';
+import { soundEngine } from '../utils/audioSystem';
 
 function Particles() {
   return (
@@ -348,8 +349,23 @@ export default function Hero() {
         transition={{ duration: 18, repeat: Infinity, ease: "easeInOut" }}
         className="hero-orb-2 bottom-1/4 right-1/4 translate-x-1/2 translate-y-1/2 pointer-events-none" 
       />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[850px] h-[850px] bg-electric/5 rounded-full blur-[140px] pointer-events-none z-0" />
-      
+      {/* Animated Hero Ambient Cyber Trails Background Image */}
+      <motion.div
+        animate={{
+          scale: [1, 1.08, 1],
+          opacity: [0.35, 0.55, 0.35],
+        }}
+        transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+        className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none overflow-hidden"
+      >
+        <img
+          src="/assets/cyber-trails.png"
+          alt="Cybernetic Trails Backdrop"
+          className="w-full h-full object-cover mix-blend-screen opacity-60 scale-105"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-navy-950/80" />
+      </motion.div>
+
       {/* Dynamic Background Particles & 3D Floating Tech Badges */}
       <Particles />
       <FloatingTechCards mouseX={mouseX} mouseY={mouseY} />
@@ -371,19 +387,47 @@ export default function Hero() {
 
         {/* Main Title Area */}
         <motion.div variants={container} initial="hidden" animate="show" className="mb-6">
-          <motion.p variants={item} className="font-display text-xs sm:text-sm md:text-base tracking-[.3em] font-bold uppercase text-white/50 mb-6 drop-shadow-md">
+          <motion.p variants={item} className="font-display text-xs sm:text-sm md:text-base tracking-[.3em] font-bold uppercase text-white/50 mb-4 drop-shadow-md">
             We Build <span className="text-purple-light mx-2 text-lg align-middle">•</span> We Create <span className="text-cyan-light mx-2 text-lg align-middle">•</span> We Solve
           </motion.p>
           
-          <AnimatedMainText text="Meet the Team" className="font-display text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-black leading-tight tracking-tight mb-1" />
-          <motion.h1 
+          {/* 3D Team Name Character Flip Stage */}
+          <div className="perspective-1000 my-2">
+            <div className="flex items-center justify-center gap-1 sm:gap-2">
+              {siteConfig.teamName.split("").map((letter, i) => (
+                <motion.span
+                  key={i}
+                  initial={{ rotateX: -180, opacity: 0, y: 40 }}
+                  animate={{ rotateX: 0, opacity: 1, y: 0 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 220,
+                    damping: 15,
+                    delay: 0.2 + i * 0.09,
+                  }}
+                  whileHover={{
+                    scale: 1.15,
+                    rotateY: 25,
+                    color: '#22d3ee',
+                    textShadow: '0 0 30px rgba(6,182,212,0.9)',
+                  }}
+                  className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black inline-block bg-gradient-to-b from-white via-slate-100 to-cyan-400 bg-clip-text text-transparent drop-shadow-[0_12px_35px_rgba(6,182,212,0.4)] cursor-pointer select-none"
+                  style={{ transformStyle: "preserve-3d" }}
+                >
+                  {letter}
+                </motion.span>
+              ))}
+            </div>
+          </div>
+
+          <motion.h2 
             initial={{ opacity: 0, scale: 0.85, filter: "blur(12px)" }}
             animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
             transition={{ delay: 0.65, duration: 0.9, ease: "easeOut" }}
-            className="font-display text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-black leading-tight tracking-tight mt-[-10px]"
+            className="font-display text-2xl sm:text-3xl md:text-5xl font-black leading-tight tracking-tight mt-1"
           >
             <span className="gradient-text pb-2 inline-block drop-shadow-[0_0_35px_rgba(139,92,246,0.3)]">Behind the Ideas</span>
-          </motion.h1>
+          </motion.h2>
         </motion.div>
 
         {/* Animated One-by-One Team Member Showcase */}
@@ -422,7 +466,10 @@ export default function Hero() {
           className="flex flex-wrap items-center justify-center gap-6"
         >
           <MagneticButton
-            onClick={() => scrollTo('#team')}
+            onClick={() => {
+              soundEngine.playClick();
+              scrollTo('#team');
+            }}
             className="btn-glow relative px-9 py-4 rounded-full bg-navy-900 border border-purple/60 text-white font-bold tracking-wide text-sm transition-all duration-300 shadow-[0_0_30px_rgba(139,92,246,0.35)] hover:shadow-[0_0_50px_rgba(139,92,246,0.7)] z-10 overflow-hidden group"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-electric via-purple to-cyan opacity-0 group-hover:opacity-30 transition-opacity duration-300" />
@@ -432,7 +479,10 @@ export default function Hero() {
           </MagneticButton>
           
           <MagneticButton
-            onClick={() => scrollTo('#project')}
+            onClick={() => {
+              soundEngine.playClick();
+              scrollTo('#project');
+            }}
             className="px-9 py-4 rounded-full glass border-white/20 text-white font-bold tracking-wide text-sm hover:text-white hover:bg-white/10 hover:border-cyan/40 transition-all duration-300 z-10 shadow-lg hover:shadow-cyan/20"
           >
             Explore Our Work

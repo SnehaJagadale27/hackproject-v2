@@ -2,18 +2,20 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ArrowRight } from 'lucide-react';
 import { siteConfig } from '../data/teamData';
+import PlasmaLogo from './PlasmaLogo';
 
 const navLinks = [
   { label: 'Home', href: '#home' },
   { label: 'Team', href: '#team' },
-  { label: 'Project', href: '#project' },
+  { label: 'Projects', href: '#project' },
+  { label: 'Command Deck', href: '#interactive-hub' },
   { label: 'Achievements', href: '#achievements' },
   { label: 'Why Us', href: '#why-us' },
   { label: 'Creative DNA', href: '#creative-dna' },
   { label: 'Contact', href: '#contact' },
 ];
 
-export default function Navbar() {
+export default function Navbar({ onReplayIntro }) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('#home');
@@ -53,14 +55,14 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-18">
           {/* Logo */}
-          <a href="#home" onClick={() => handleClick('#home')} className="flex items-center gap-2 group">
-            <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-electric to-purple flex items-center justify-center font-display font-bold text-sm text-white group-hover:shadow-lg group-hover:shadow-purple/30 transition-shadow">
-              {siteConfig.teamInitials}
+          <a href="#home" onClick={() => handleClick('#home')} className="flex items-center gap-2.5 group">
+            <PlasmaLogo size="sm" showText={true} interactive={true} />
+            <div className="hidden sm:flex flex-col leading-none ml-1">
+              <span className="font-display font-bold text-white text-sm tracking-wide">{siteConfig.teamName}</span>
+              <span className="text-[9px] text-white/30 uppercase tracking-[.2em] font-mono">Team Portfolio</span>
             </div>
-            <span className="hidden sm:block font-display font-semibold text-white/90 text-sm">
-              {siteConfig.teamName}
-            </span>
           </a>
+
 
           {/* Desktop links */}
           <div className="hidden md:flex items-center gap-1">
@@ -79,14 +81,23 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* CTA + Hamburger */}
-          <div className="flex items-center gap-3">
+          {/* CTA + Replay Intro + Hamburger */}
+          <div className="flex items-center gap-2 sm:gap-3">
+            {onReplayIntro && (
+              <button
+                onClick={onReplayIntro}
+                className="hidden lg:flex items-center gap-1 px-3 py-1 rounded-full text-xs font-mono text-cyan-300 border border-cyan-500/30 bg-cyan-500/10 hover:bg-cyan-500/20 transition-all"
+                title="Replay Cinematic Intro"
+              >
+                ⚡ Intro
+              </button>
+            )}
             <a
               href="#project"
               onClick={(e) => { e.preventDefault(); handleClick('#project'); }}
               className="hidden md:flex items-center gap-1 px-4 py-1.5 rounded-full text-sm font-semibold bg-gradient-to-r from-electric to-purple text-white hover:shadow-lg hover:shadow-purple/25 transition-all duration-300 hover:scale-105"
             >
-              View Our Work <ArrowRight size={14} />
+              View Work <ArrowRight size={14} />
             </a>
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
