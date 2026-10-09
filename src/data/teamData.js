@@ -5,7 +5,7 @@
 export const siteConfig = {
   teamName: "Codex",
   teamInitials: "CX",
-  hackathonName: "TechCreative Hackathon 2026",
+  hackathonName: "",
   tagline: "Four minds. Different strengths. One mission — turning ideas into meaningful solutions.",
   badge: "Tech × Creativity × Impact",
 };
@@ -19,7 +19,7 @@ export const members = [
   name: "Abhay Kakaso Chougule",
   role: "AI & Data Science Engineer",
 
-  bio: "Motivated Artificial Intelligence and Data Science engineering student with knowledge of programming, machine learning, data analysis, and web development. Passionate about applying technical skills to real-world projects, solving practical problems, and continuously improving technical expertise.",
+  bio: "Motivated Artificial Intelligence and Data Science engineering student with knowledge of programming, machine learning, data analysis, and web development. Passionate about applying technical skills to real-world projects.",
 
   photo: "/assets/team/Abhay.jpeg",
   photoPosition: "center 20%",
@@ -34,9 +34,6 @@ export const members = [
     "CSS3",
     "Bootstrap",
     "MySQL",
-    "NumPy",
-    "Pandas",
-    "Scikit-learn",
     "Jupyter Notebook",
     "LangChain",
     "APIs",
