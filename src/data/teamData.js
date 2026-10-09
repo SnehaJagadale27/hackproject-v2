@@ -244,8 +244,8 @@ export const project = {
   technologies: ["Java", "XML", "Firebase", "Android"],
   impact: "Faster complaint resolution, real-time tracking, improved community communication, and data-driven insights for management.",
   role: "Full-stack development, UI design, database architecture, and user testing.",
-  github: "https://github.com",
-  demo: "https://example.com",
+  github: "https://github.com/ak-devzone/Fullstack-Digital-Lib-System/",
+  demo: "https://library-systemm.web.app/",
   stats: [
     { label: "Featured Project", value: "01" },
     { label: "Team Members", value: "04" },
